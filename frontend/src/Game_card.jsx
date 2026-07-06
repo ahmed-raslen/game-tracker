@@ -13,6 +13,7 @@ function Game_card({ name , rating}) {
             <h2>{name}</h2>
             <p>status: {status}</p>
             <p>rating: {rating}</p>
+            {rating >= 9 && <p>Highly rated game</p>}
             <button onClick={toggleStatus}>Toggle Status</button>
         </div>
     );
