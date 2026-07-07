@@ -7,3 +7,7 @@ from .serializers import GameSerializer
 class GameListCreateView(generics.ListCreateAPIView):
     queryset = Game.objects.all()
     serializer_class = GameSerializer
+    
+class GameDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Game.objects.all()
+    serializer_class = GameSerializer
