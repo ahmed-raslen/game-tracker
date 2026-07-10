@@ -7,7 +7,7 @@ function AddGameForm({ onAddGame}) {
         setNewGameName("")
         }
         return(
-            <form onSubmit={handleSubmite}>
+            <form className="add-game-form" onSubmit={handleSubmite}>
             <input
                 type="text"
                 value={newGameName}
